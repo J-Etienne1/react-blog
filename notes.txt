@@ -1,0 +1,2 @@
+npx create-react-app dojo-blog
+this line creates the react app 
