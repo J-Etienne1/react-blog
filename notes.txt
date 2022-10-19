@@ -1,2 +1,14 @@
+Full Modern React Tutorial by Net Ninja
+https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d
+https://github.com/iamshaunjp/Complete-React-Tutorial
+
+
+
+
 npx create-react-app dojo-blog
 this line creates the react app 
+
+
+when uploading react projects to GitHub, the node_modules folder isnt uploaded as it is so large, so if you dowload a react git repo, after you download it cd into the project and enter 
+npm install
+this will look in the package.json file for all the project dependncises and install them and create the node_module folder
