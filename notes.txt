@@ -66,13 +66,56 @@ export default App;
 
 ===================================================================================
 
+Exampe of inline styling
+<a
+          href="/create"
+          style={{
+            color: "white",
+            backgroundColor: "#f1356d",
+            borderRadius: "8px",
+          }}
+        >
 
 
 
+===================================================================================
+
+Example of a function and how to use events
+
+import React from "react";
+
+const Home = () => {
+  const handleClick = () => {
+    console.log("Hello there");
+  };
+
+  return (
+    <div className="home">
+      <h2>Homepage</h2>
+      <button onClick={handleClick}>Click me</button>
+    </div>
+  );
+};
+
+export default Home;
 
 
 
+if we use 
+<button onClick={handleClick()}>Click me</button>
+the function will be invokled automatically which may be not what we want like i this className
 
+if we have a function that we want to give arguments to using () isnt an option so in this case we wrap our function inside an anonomys function
+
+const handleClickAgain = (name) => {
+    console.log('hello ' + name)
+
+  }
+
+
+<button onClick={() => {handleClickAgain("Jason");}}>  Click me again </button>
+
+===================================================================================
 
 
 
