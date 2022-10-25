@@ -214,6 +214,60 @@ to check if we can connect but the we do not get any data back (endpoint is faul
 
 ==================================================================================
 
+MULTIPLE PAGES / ROUTES
+This is done using the React Router
+
+install the React Router package using npm
+create a new terminal 
+npm install react-router-dom@5
+
+
+@5 means version 5 which is currently stable ver 6 is in beta at the time of video 14/jan/2021
+
+After install go to the route component, in this case App.js
+and import
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
+the need to surround the entire application with the Router component
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Home />
+        </div>
+      </div>
+    </Router>
+  );
+}
+
+
+then we want to decide where the content will load from the other pages
+we will load them into the div with the callName=content
+<div className="content">
+          <Home />
+        </div>
+
+so we will delte the Home component
+and replace it with the Switch component
+
+The Switch component makes sure that only one route is displayed at any one time
+
+we add our Route component and need to add a property which is the path
+home page eg <Route path="/">
+about page eg <Route path="/about">
+
+ <div className="App">
+        <Navbar />
+        <div className="content">
+          <Switch>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
 
 
 
@@ -221,6 +275,16 @@ to check if we can connect but the we do not get any data back (endpoint is faul
 
 
 
+
+
+
+
+
+
+
+
+
+==================================================================================
 
 
 
