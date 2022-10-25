@@ -149,7 +149,7 @@ to set up a fake rest api with JSON server, enter the foloowing in the console, 
 npx json-server --watch data/db.json --port 8000
 
 
-
+needs to be restarted with the above commmand each time reat is loaded up
 
 
 
