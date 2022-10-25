@@ -270,7 +270,12 @@ about page eg <Route path="/about">
         </div>
 
 
-
+if adding multile routes eg
+<Route path="/">
+<Route path="/create">
+The home page will always display as / is a match and react will look no further to get around this use and exact path
+<Route exact path="/">
+<Route exact path="/create">
 
 
 
