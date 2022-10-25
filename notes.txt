@@ -194,16 +194,25 @@ const BlogList = ({ blogs, title, handleDelete }) => {
 
 
 
-===================================================================================
+==================================================================================
+
+Home.js
+
+.catch((err) => {
+        console.log(err.message);
+      });
+
+use Ctrl C to stop the JSON server then reload the page and in the console we will see the connection error displayed
+
+GET http://localhost:8000/blogs net::ERR_CONNECTION_REFUSED
+
+Failed to fetch
 
 
+to check if we can connect but the we do not get any data back (endpoint is fault or doesnt exist) we add an IF check
 
 
-
-
-
-
-
+==================================================================================
 
 
 
