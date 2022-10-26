@@ -334,6 +334,55 @@ Submit Events
 
 ==================================================================================
 
+Use tyo go back 1 page after submitting a blog
+
+Create.js file
+
+setIsPending(false);
+      history.go(-1)
+
+or rediect to home page after a blog has been added
+history.push('/')
+
+
+
+
+==================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
